@@ -46,13 +46,16 @@ mongoose.connect(process.env.CONNECTION_STRING, {
 
 
 
+//developpement
+app.listen(3000, () => {
+  console.log("server is running http://localhost:3000");
+});
 
 
-
-var server = app.listen(process.env.PORT || 3000,function(){
+/*var server = app.listen(process.env.PORT || 3000,function(){
 
 var port = server.address().port;
 console.log("Expfress is working onport") + port;
 
 
-})
+})*/
